@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="./js/jquery-3.7.1.js"></script>
+    <!-- Load jQuery first -->
+    <!-- Load your script after jQuery -->
+    <style>
+      body {
+        width: 400px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      input[type="text"] {
+        width: 100%; /* Full width */
+        padding: 10px; /* Padding inside the input */
+        border: 1px solid #ced4da; /* Light gray border */
+        border-radius: 5px; /* Rounded corners */
+        font-size: 16px; /* Font size */
+        box-sizing: border-box; /* Include padding and border in the element's total width */
+        transition: border-color 0.3s; /* Smooth transition for border color */
+      }
+
+      input[type="text"]:focus {
+        border-color: #28a745; /* Green border on focus */
+        outline: none; /* Remove default outline */
+      }
+      .btn-primary {
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      .btn-primary:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="popup.js"></script>
+    <input placeholder="Enter image link" id="imagelink" />
+    <input
+      id="submitbtn"
+      class="btn-primary"
+      type="submit"
+      value="change background"
+    />
+  </body>
+</html>
